@@ -1,0 +1,90 @@
+:root {
+    --box-color-generic: #3498db;
+    --box-color-generic-border: #2980b9;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar h1 {
+    padding-left: 30px;
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
+body {
+    padding-top: 60px; /* Adjust based on navbar height */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 0px; /* Space between rows */
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    padding: 5px;
+    background-color: #3498db;
+    border: 1px solid #2980b9;
+    margin: 15px;
+}
+
+.box-form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.box-form label {
+    margin-bottom: 5px;
+    color: white;
+    display: block;
+}
+
+.box-form .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.box-form .form-group label {
+    margin-right: 10px;
+}
+
+.box-form input[type="text"],
+.box-form textarea {
+    background-color: #3498db; /* Match the background color of the box */
+    color: white;
+    padding: 5px;
+    border: 1px solid #2980b9;
+    border-radius: 4px;
+}
+
+.box-form textarea {
+    flex-grow: 1;
+    resize: none; /* Prevents resizing */
+    min-height: 100px; /* Ensure some minimum height */
+}
