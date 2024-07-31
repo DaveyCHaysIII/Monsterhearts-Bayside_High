@@ -15,6 +15,7 @@ body {
     padding: 12px 0;
     position: fixed;
     width: 100%;
+    display: flex;
     top: 0;
     left: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -23,9 +24,23 @@ body {
 
 .navbar h1 {
     padding-left: 30px;
+    padding-right: 30px;
     margin: 0;
     font-family:'Courier New', Courier, monospace;
     font-style: italic;
+    align-items: center;
+}
+
+.navbar .navform {
+    display: flex;
+    align-items: center;
+    margin-left: auto
+}
+
+.navbar .navform input {
+    color: white;
+    margin-left: 7px;
+    margin-right: 14px;
 }
 
 body {
@@ -108,7 +123,7 @@ button {
 }
 
 .orange {
-    background-color: orange;
+    background-color: rgb(224, 151, 15);
 }
 
 .dead {
